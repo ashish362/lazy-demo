@@ -6,11 +6,7 @@ pipeline {
   }
   agent any
   stages {
-	stage('Unit Test') {
-	   steps {
-	       sh label: '', script: 'mvn test'
-       }
-   	}
+	
   
  	
     stage('Docker Image Build') {
